@@ -10,13 +10,27 @@
 //
 // console.log(total);
 
-const names = ['Gary', 'Pasan', 'Gabe', 'Treasure', 'Gengis', 'Gladys', 'Tony'];
+// const names = ['Gary', 'Pasan', 'Gabe', 'Treasure', 'Gengis', 'Gladys', 'Tony'];
+//
+// const gName = names.reduce((letter, name) => {
+//     if(name[0] === 'G'){
+//         return letter + 1;
+//     }
+//     return letter;
+// },0);
+//
+// console.log(gName);
 
-const gName = names.reduce((letter, name) => {
-    if(name[0] === 'G'){
-        return letter + 1;
+
+const phoneNumbers = ["(503) 123-4567", "(646) 123-4567", "(503) 987-6543", "(503) 234-5678", "(212) 123-4567", "(416) 123-4567"];
+const numberOf503 = phoneNumbers.reduce((access, number)=>{
+    if (number.substring(1,4) === '503'){
+        return access + 1;
     }
-    return letter;
-},0);
+        return access;
+    },0);
 
-console.log(gName);
+console.log(numberOf503);
+
+// numberOf503 should be: 3
+// Write your code below
