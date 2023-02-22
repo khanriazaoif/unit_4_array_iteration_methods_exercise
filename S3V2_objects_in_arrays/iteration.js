@@ -1,22 +1,41 @@
-// const years = [1989, 2015, 2000, 1999, 2013, 1973, 2012];
-// let displayYears;
+// const users = [
+//   {name: 'Samir', age: 27},
+//   {name: 'Angela', age: 33},
+//   {name: 'Beatrice', age: 42}
+// ];
 
-// displayYears should be: ["2015 A.D.", "2013 A.D.", "2012 A.D."]
-// Write your code below
+// const newUsersArray = users.filter(user => user.name !== 'Samir');
 
-// displayYears = years.filter(number => number >= 2001)
-//     .map(number => number);
-// displayYears = `${displayYears} A.D.`;
+// const newUsersArray = users.map(user => `${user.name} is ${user.age} years old.`);
 
-// displayYears = years
-//     .filter(number => number >= 2001)
-//     .map(number => `${number} A.D.`);
+// const usersObject = users.reduce((usersObject, user) =>{
+//   usersObject[user.name] = user.age;
+// return usersObject;
+// }, {});
 //
-//
-// console.log(displayYears);
+// console.log(usersObject);
 
-const users = [
-  {name: 'Samir'},
-  {name: 'Angela'},
-  {name: 'Beatrice'}
+const authors = [
+  { firstName: "Beatrix", lastName: "Potter" },
+  { firstName: "Ann", lastName: "Martin" },
+  { firstName: "Beverly", lastName: "Cleary" },
+  { firstName: "Roald", lastName: "Dahl" },
+  { firstName: "Lewis", lastName: "Carroll" }
 ];
+let fullAuthorNames;
+
+// fullAuthorNames should be: ["Beatrix Potter", "Ann Martin", "Beverly Cleary", "Roald Dahl", "Lewis Carroll"]
+// Write your code below
+fullAuthorNames = authors.map(author => `${author.firstName} ${author.lastName}`);
+
+console.log(fullAuthorNames);
+
+
+
+
+
+
+
+
+
+
